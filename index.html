@@ -5,10 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>html form</title>
-       
+        <style>
+            form{
+                text-align: center;
+                background-color:rosybrown;
+                margin-left: 30em;
+                margin-right: 30em;
+            }
+            body{
+                background-color:aqua;
+            }
+            h1{
+                text-align: center;
+                font-size:2em;
+            }
+        </style>
     </head>
     <body>
-        <H3 class="a">login page</H3>
+        <H1>login page</H1>
         <form>
             <div>
                 <lable for="a">first name:</lable>
@@ -34,8 +48,19 @@
                 <lable id="e">mobile number:</lable>
                 <input id="e" type="number" name="number" placeholder="number"/>
             </div>
+            <br>
             <div>
-
+                <lable id="f">gender:</lable>
+                <input id="f" type="radio" name="gender" value="male"/>
+                <input id="g" type="radio" name="gender" value="female"/>
+            </div>
+            <br>
+            <div>
+                write about yourself:<br><textarea name="massage" rows="5" cols="30"></textarea>
+            </div>
+            <br>
+            <div>
+                eligibility:<input type="checkbox" name="eligibility" />
             </div>
             <br>
             submit:<input type="submit" value="Submit"/>reset:<input type="reset" value="Reset"/>
